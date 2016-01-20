@@ -1,6 +1,13 @@
+build_image: drydock/u12pytpls:prod
 python:
-  - "2.7"
+  - 2.6      
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - pypy
+  - pypy3
 language: python
-install: pip install --use-mirrors -r requirements.txt
 script:
   - python sqliteSample.py
