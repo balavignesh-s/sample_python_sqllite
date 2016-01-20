@@ -13,7 +13,7 @@ c.execute('''INSERT INTO foods VALUES ('sandwich', 30.14, 20)''')
 
 c.execute('SELECT * FROM foods')
 
-print c.fetchone()
+print(c.fetchone())
 
 conn.commit()
 conn.close()
